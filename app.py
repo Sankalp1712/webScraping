@@ -91,6 +91,31 @@ def get_data():
 
     return jsonify(result)
 
+@app.route('/fetch1', methods=['GET'])
+def get_author_data():
+    cursor.execute("SELECT * FROM author")
+    data = cursor.fetchall()
+    
+    if author_name == "All":
+        flag = False
+    
+    result = []
+    for row in data:
+        result.append({
+            'author_id': row[0],
+            'name': row[1],
+            'affiliation': row[2],
+            'email': row[3],
+            'interests': row[4],
+            'department': row[5],
+            'citedby': row[6],
+            'h_index': row[7],
+            'i10_index': row[8],
+            'last_searched': row[9]
+        })
+
+    return jsonify(result)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

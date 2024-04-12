@@ -115,6 +115,11 @@ export default function Home1() {
             </button>
           )}
         </form>
+        <div className='mt-4 '>
+          <Link to ='/result1' className="border p-2 text-sm rounded bg-slate-800 text-white hover:opacity-90">
+            Get Author Data
+          </Link>
+        </div>
       </div>
     </div>
   );

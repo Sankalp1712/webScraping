@@ -24,12 +24,12 @@ function DataDisplay() {
             <table className="table-auto w-full border-bottom border-gray-600 border-b-6 text-center">
                 <thead style={{ backgroundColor: '#584343d8' }}>
                     <tr>
-                        <th className="px-8 py-2">Title</th> {/* Increased width */}
-                        <th className="px-4 py-2">Publication Year</th>
-                        <th className="px-8 py-2">Citation</th> {/* Increased width */}
+                        <th className="px-24 py-2">Title</th> {/* Increased width */}
+                        <th className="px-2 py-2">Publication Year</th>
+                        <th className="px-24 py-2">Citation</th> {/* Increased width */}
                         <th className="px-4 py-2">Author</th>
                         <th className="px-4 py-2">Publication ID</th>
-                        <th className="px-4 py-2">Number of Citations</th>
+                        <th className="px-2 py-2">Number of Citations</th>
                         <th className="px-4 py-2">Citation URL</th>
                     </tr>
                 </thead>
