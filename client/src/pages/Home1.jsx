@@ -15,6 +15,7 @@ export default function Home1() {
       if (authorName !== "") {
         setLoading(true); // Set loading state to true
         const response = await axios.post('http://127.0.0.1:5000/search', { authorName,selectedYear });
+        console.log(response.data);
         setLoading(false); // Set loading state to false after request completes
         setFormSubmitted(true);
         setAuthorName('');
@@ -124,3 +125,5 @@ export default function Home1() {
     </div>
   );
 }
+
+

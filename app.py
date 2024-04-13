@@ -46,6 +46,7 @@ def submit():
 
         scraping.process_text(text_value)
 
+
     
     # Call a function from scraping.py and pass the text value
     import time
@@ -53,7 +54,7 @@ def submit():
 
     author_name=text_value
 
-    return jsonify({'message': 'Text value received and processed successfully'})
+    return jsonify({'message': 'Text value received and processed successfully','flag':True})
 
 @app.route('/fetch', methods=['GET'])
 def get_data():
